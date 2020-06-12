@@ -11,3 +11,6 @@ sigmoid.m - Sigmoid Function.<br/>
 costFunction.m - Logistic Regression Cost Function.<br/>
 predict.m - Logistic Regression Prediction Function.<br/>
 costFunctionReg.m - Regularized Logistic Regression Cost.<br/>
+<br/>
+**Note:** We should just run ex2.m (Linear Regression) or ex2_reg.m (Regularized Linear Regression) and it will automatically load and display data.
+
