@@ -15,8 +15,7 @@ J =(-1/m) * sum(y.* log(sigmoid(X*theta)) + (1-y).*log(1 - sigmoid(X*theta))) + 
 
 grad(1) = (1/m) * (sigmoid(X*theta) - y)' * X(:,1);
 
-for i = 2:length(grad)
-  grad(i) = (1/m) * (sigmoid(X*theta) - y)' * X(:,i) + (lambda/m)*theta(i);
-end
+n = length(grad);
+grad(2:n) = (1/m) * (sigmoid(X*theta) - y)' * X(:,2:n) + (lambda/m)*(theta(2:n,:))'; %Vectorized operation 
 
 end
